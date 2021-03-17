@@ -1,7 +1,7 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: linux-64
-_libgcc_mutex=0.1=main
+#_libgcc_mutex=0.1=main
 apscheduler=3.7.0=py38h578d9bd_0
 attrs=20.3.0=pyhd3eb1b0_0
 backcall=0.2.0=pyhd3eb1b0_0
