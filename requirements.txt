@@ -14,7 +14,7 @@ cryptography==3.2.1
 decorator==4.4.2
 Django==2.2.5
 Fiona==1.8.13.post1
-folium==0.0.0
+folium==0.12.1
 GDAL==3.0.2
 geopandas==0.8.1
 idna==2.10
