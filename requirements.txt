@@ -1,133 +1,58 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: linux-64
-#_libgcc_mutex=0.1=main
-apscheduler=3.7.0=py38h578d9bd_0
-attrs=20.3.0=pyhd3eb1b0_0
-backcall=0.2.0=pyhd3eb1b0_0
-beautifulsoup4=4.9.3=pyhb0f4dca_0
-blas=1.0=mkl
-branca=0.4.2=pyhd8ed1ab_0
-brotlipy=0.7.0=py38h8df0ef7_1001
-bzip2=1.0.8=h7b6447c_0
-ca-certificates=2020.10.14=0
-cairo=1.14.12=h8948797_3
-certifi=2020.6.20=py38_0
-cffi=1.14.4=py38ha312104_0
-cfitsio=3.470=hb7c8383_2
-chardet=4.0.0=py38h578d9bd_1
-click=7.1.2=pyhd3eb1b0_0
-click-plugins=1.1.1=py_0
-cligj=0.7.1=py38h06a4308_0
-cryptography=3.2.1=py38h7699a38_0
-curl=7.67.0=hbc83047_0
-decorator=4.4.2=pyhd3eb1b0_0
-django=2.2.5=py38_1
-expat=2.2.10=he6710b0_2
-fiona=1.8.13.post1=py38hc820daa_0
-folium=0.12.0=pyhd8ed1ab_0
-fontconfig=2.13.1=h6c09931_0
-freetype=2.10.4=h5ab3b9f_0
-freexl=1.0.6=h27cfd23_0
-gdal=3.0.2=py38hbb2a789_0
-geopandas=0.8.1=py_0
-geos=3.8.0=he6710b0_0
-geotiff=1.5.1=h21e8280_1
-giflib=5.1.4=h14c3975_1
-glib=2.63.1=h5a9c865_0
-hdf4=4.2.13=h3ca952b_2
-hdf5=1.10.4=hb1b8bf9_0
-icu=58.2=he6710b0_3
-idna=2.10=pyh9f0ad1d_0
-intel-openmp=2020.2=254
-ipykernel=5.3.4=py38h5ca1d4c_0
-ipython=7.21.0=py38hb070fc8_0
-ipython_genutils=0.2.0=pyhd3eb1b0_1
-jedi=0.17.0=py38_0
-jinja2=2.11.3=pyh44b312d_0
-jpeg=9b=h024ee3a_2
-json-c=0.13.1=h1bed415_0
-jupyter_client=6.1.7=py_0
-jupyter_core=4.7.1=py38h06a4308_0
-kealib=1.4.7=hd0c454d_6
-krb5=1.16.4=h173b8e3_0
-ld_impl_linux-64=2.33.1=h53a641e_7
-libboost=1.67.0=h46d08c1_4
-libcurl=7.67.0=h20c2e04_0
-libdap4=3.19.1=h6ec2957_0
-libedit=3.1.20191231=h14c3975_1
-libffi=3.2.1=hf484d3e_1007
-libgcc-ng=9.1.0=hdf63c60_0
-libgdal=3.0.2=h27ab9cc_0
-libgfortran-ng=7.3.0=hdf63c60_0
-libkml=1.3.0=h590aaf7_4
-libnetcdf=4.6.1=h11d0813_2
-libpng=1.6.37=hbc83047_0
-libpq=11.2=h20c2e04_0
-libsodium=1.0.18=h7b6447c_0
-libspatialindex=1.9.3=he6710b0_0
-libspatialite=4.3.0a=h793db0d_0
-libssh2=1.9.0=h1ba5d50_1
-libstdcxx-ng=9.1.0=hdf63c60_0
-libtiff=4.1.0=h2733197_0
-libuuid=1.0.3=h1bed415_2
-libxcb=1.14=h7b6447c_0
-libxml2=2.9.10=hb55368b_3
-lz4-c=1.8.1.2=h14c3975_0
-markupsafe=1.1.1=py38h8df0ef7_2
-mkl=2020.2=256
-mkl-service=2.3.0=py38he904b0f_0
-mkl_fft=1.3.0=py38h54f3939_0
-mkl_random=1.1.1=py38h0573a6f_0
-munch=2.5.0=py_0
-ncurses=6.2=he6710b0_1
-numpy=1.19.2=py38h54aff64_0
-numpy-base=1.19.2=py38hfa32c7d_0
-openjpeg=2.3.0=h05c96fa_1
-openssl=1.1.1h=h7b6447c_0
-pandas=1.2.3=py38ha9443f7_0
-parso=0.8.1=pyhd3eb1b0_0
-pcre=8.44=he6710b0_0
-pexpect=4.8.0=pyhd3eb1b0_3
-pickleshare=0.7.5=pyhd3eb1b0_1003
-pip=21.0.1=py38h06a4308_0
-pixman=0.40.0=h7b6447c_0
-poppler=0.65.0=h581218d_1
-poppler-data=0.4.10=h06a4308_0
-postgresql=11.2=h20c2e04_0
-proj=6.2.1=haa6030c_0
-prompt-toolkit=3.0.8=py_0
-ptyprocess=0.7.0=pyhd3eb1b0_2
-pycparser=2.20=pyh9f0ad1d_2
-pygments=2.8.1=pyhd3eb1b0_0
-pyopenssl=20.0.1=pyhd8ed1ab_0
-pyproj=2.6.1.post1=py38hb3025e9_1
-pysocks=1.7.1=py38h578d9bd_3
-python=3.8.2=h191fe78_0
-python-dateutil=2.8.1=pyhd3eb1b0_0
-python_abi=3.8=1_cp38
-pytz=2021.1=pyhd3eb1b0_0
-pyzmq=20.0.0=py38h2531618_1
-readline=7.0=h7b6447c_5
-requests=2.25.1=pyhd3deb0d_0
-rtree=0.9.4=py38_1
-setuptools=52.0.0=py38h06a4308_0
-shapely=1.7.1=py38h98ec03d_0
-six=1.15.0=py38h06a4308_0
-soupsieve=2.0.1=py_0
-sqlite=3.33.0=h62c20be_0
-sqlparse=0.4.1=py_0
-tbb=2018.0.5=h6bb024c_0
-tiledb=1.6.3=h1fb8f14_0
-tk=8.6.10=hbc83047_0
-tornado=6.1=py38h27cfd23_0
-traitlets=5.0.5=pyhd3eb1b0_0
-tzlocal=2.0.0=py_0
-urllib3=1.26.3=pyhd8ed1ab_0
-wcwidth=0.2.5=py_0
-wheel=0.36.2=pyhd3eb1b0_0
-xerces-c=3.2.3=h780794e_0
-xz=5.2.5=h7b6447c_0
-zeromq=4.3.3=he6710b0_3
-zlib=1.2.11=h7b6447c_3
-zstd=1.3.7=h0b5b093_0
+APScheduler @ file:///home/conda/feedstock_root/build_artifacts/apscheduler_1611071146170/work
+attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+beautifulsoup4 @ file:///tmp/build/80754af9/beautifulsoup4_1601924105527/work
+branca @ file:///home/conda/feedstock_root/build_artifacts/branca_1609346930842/work
+brotlipy==0.7.0
+certifi==2020.6.20
+cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1606236101993/work
+chardet @ file:///home/conda/feedstock_root/build_artifacts/chardet_1610093490430/work
+click @ file:///home/linux1/recipes/ci/click_1610990599742/work
+click-plugins==1.1.1
+cligj==0.7.1
+cryptography @ file:///home/conda/feedstock_root/build_artifacts/cryptography_1604179079864/work
+decorator @ file:///home/ktietz/src/ci/decorator_1611930055503/work
+Django==2.2.5
+Fiona==1.8.13.post1
+folium @ file:///home/conda/feedstock_root/build_artifacts/folium_1609967009544/work
+GDAL==3.0.2
+geopandas @ file:///tmp/build/80754af9/geopandas_1594937497867/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
+ipykernel @ file:///tmp/build/80754af9/ipykernel_1596207638929/work/dist/ipykernel-5.3.4-py3-none-any.whl
+ipython @ file:///tmp/build/80754af9/ipython_1614615245721/work
+ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+jedi==0.17.0
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1612119311452/work
+jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1601311786391/work
+jupyter-core @ file:///tmp/build/80754af9/jupyter_core_1612213311222/work
+MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_1602267312178/work
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+munch==2.5.0
+numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1603570489231/work
+pandas==1.2.3
+parso @ file:///tmp/build/80754af9/parso_1607623074025/work
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1602688806899/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
+Pygments @ file:///tmp/build/80754af9/pygments_1615143339740/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1608055815057/work
+pyproj @ file:///tmp/build/80754af9/pyproj_1614277937369/work
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1610291447907/work
+python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
+pytz @ file:///tmp/build/80754af9/pytz_1612215392582/work
+pyzmq==20.0.0
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1608156231189/work
+Rtree==0.9.4
+Shapely @ file:///tmp/build/80754af9/shapely_1599817083863/work
+six @ file:///tmp/build/80754af9/six_1605205327372/work
+soupsieve==2.0.1
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
+tornado @ file:///tmp/build/80754af9/tornado_1606942300299/work
+traitlets @ file:///home/ktietz/src/ci/traitlets_1611929699868/work
+tzlocal==2.0.0
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1611695416663/work
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
