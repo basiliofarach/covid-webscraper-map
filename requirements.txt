@@ -15,7 +15,6 @@ decorator==4.4.2
 Django==2.2.5
 Fiona==1.8.13.post1
 folium==0.12.1
-GDAL==3.0.2
 geopandas==0.8.1
 idna==2.10
 ipykernel==5.3.4
@@ -48,6 +47,7 @@ pytz==2021.1
 pyzmq==20.0.0
 requests==2.25.1
 Rtree==0.9.4
+GDAL==3.0.2
 setuptools==52.0.0.post20210125
 Shapely==1.7.1
 six==1.15.0
