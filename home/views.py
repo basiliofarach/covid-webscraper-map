@@ -6,4 +6,7 @@ def index(request):
     return render(request, 'index.html')
 
 def map(request):
-    return render(request, 'Covid_Map/Map1.html')
+    return render(request, 'covidMap/Map1.html')
+
+def data(request):
+    return render(request, 'covidMap/data.html')

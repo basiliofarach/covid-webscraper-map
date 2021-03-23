@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Webscrap Application to Covid Map</title>
+    <title>Webscraper Application to Covid Map</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet"  href="{% static 'css/materialize.min.css' %}" media="screen,projection"/>
 
@@ -15,15 +15,16 @@
           <a className="brand-logo" href="{% url 'index' %}">Home</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="{% url 'map' %}">Map</a></li>
-            <li><a href="{% url 'index' %}">Data</a></li>
+            <li><a href="{% url 'data' %}">Data</a></li>
           </ul>
         </div>
       </nav>
 
     <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
-    {% block body %}
 
-    {% endblock %}
   </div>
   </body>
-</html>
+
+  {% block body %}
+
+  {% endblock %}

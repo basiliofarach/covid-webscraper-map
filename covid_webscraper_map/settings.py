@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'Covid_Map.apps.CovidMapConfig',
+    'covidMap.apps.CovidMapConfig',
     'home',
     'django.contrib.admin',
     'django.contrib.auth',

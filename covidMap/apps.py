@@ -2,7 +2,7 @@ from django.apps import AppConfig
 
 
 class CovidMapConfig(AppConfig):
-    name = 'Covid_Map'
+    name = 'covidMap'
 
     def ready(self):
 

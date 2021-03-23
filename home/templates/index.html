@@ -1,6 +1,33 @@
 {% extends 'header.html' %}
 
 {% block body %}
-  <h1>Map</h1>
+<div class="container">
+  <div class="row">
+
+
+    <div class="card-panel teal lighten-2 center col s12"">
+      <h1>Description of the Web App</h1>
+    </div>
+
+    <div class="card-panel teal lighten-3 col s12"">
+      <h3>This web application was made to test various abilities using Python, like webscraping data, making maps, and making a web application to present all this.</h3>
+    </div>
+
+    <div class="card-panel teal lighten-3 col s12"">
+      <h4>The Map Updates itself every six hours.</h4>
+    </div>
+
+    <div class="card-panel teal lighten-3 col s5">
+      <h4>At the start the features of the map are combined, to separate the features activate or deactivate the data (currently Population and Total Cases).</h4>
+    </div>  
+
+    <div class="card-panel teal lighten-3 col s6 offset-s1">
+      <h4>The current data used is presented in the header, and it's obtained from "www.worldometers.info/coronavirus/", all credits to that page,
+        the data can be obtained from a different API, but I wanted to test how to make a webscraper and adjust the data to my needs.</h4>
+    </div>
+
+  </div>
+</div>
+
 
 {% endblock %}

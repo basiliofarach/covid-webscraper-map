@@ -16,10 +16,14 @@ def map():
 
     fgc=folium.FeatureGroup(name="Total Covid Cases")
     fgp=folium.FeatureGroup(name="Population By Color")
-    
+
     folium.TileLayer('cartodbpositron').add_to(map)
 
     data=pd.read_csv("updateMap/output.csv")
+    data.rename( columns={'Unnamed: 0':'Index'}, inplace=True )
+    data.to_html("covidMap/templates/covidMap/data.html", index=False, classes='container highlight striped')
+    with open('./covidMap/templates/covidMap/data.html', 'r+') as original: data_file = original.read()
+    with open('./covidMap/templates/covidMap/data.html', 'w') as modified: modified.write("{% extends 'header.html' %}\n{% block body %}\n" + data_file + "\n{% endblock %}")
     data_json = gpd.GeoDataFrame(data)
     total_cases=list(data["Total Cases"])
     population=list(data["Population"])
@@ -53,4 +57,7 @@ def map():
     map.add_child(fgc)
     map.add_child(fgp)
     map.add_child(folium.LayerControl())
-    map.save("./Covid_Map/templates/Covid_Map/Map1.html")
+    map.save("./covidMap/templates/covidMap/Map1.html")
+
+    with open('./covidMap/templates/covidMap/Map1.html', 'r+') as original: map_file = original.read()
+    with open('./covidMap/templates/covidMap/Map1.html', 'w') as modified: modified.write("{% extends 'header.html' %}\n{% block body %}\n" + map_file + "\n{% endblock %}")
