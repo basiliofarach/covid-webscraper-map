@@ -7059,6 +7059,8 @@ $jscomp.polyfill = function (e, r, p, m) {
       M.updateTextFields();
     });
 
+    $(".dropdown-trigger").dropdown();
+
     // HTML DOM FORM RESET handling
     $(document).on('reset', function (e) {
       var formReset = $(e.target);

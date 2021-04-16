@@ -5,22 +5,32 @@
     <meta charset="utf-8">
     <title>Webscraper Application to Covid Map</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet"  href="{% static 'css/materialize.min.css' %}" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet"  href="{% static 'css/materialize.css' %}" media="screen,projection"/>
+    <script type="text/javascript" href="{% static 'js/materialize.js' %}" ></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+
+
 
   </head>
   <body>
     <div class="container">
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="{% url 'graph' %}">one</a></li>
+        <li><a href="{% url 'graph' %}">two</a></li>
+        <li><a href="{% url 'graph' %}">three</a></li>
+        <li><a href="{% url 'graph' %}">three</a></li>
+      </ul>
       <nav style= background-color:#00aae4 >
         <div className="nav-wrapper">
-          <a className="brand-logo" href="{% url 'index' %}">Home</a>
+          <a className="brand-logo" href="{% url 'index' %}"><i class="material-icons left">home</i>Home</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="{% url 'map' %}">Map</a></li>
-            <li><a href="{% url 'data' %}">Data</a></li>
+            <li><a href="{% url 'map' %}"><i class="material-icons left">navigation</i>Map</a></li>
+            <li><a href="{% url 'data' %}" ><i class="material-icons left">analytics</i>Data</a></li>
+            <li><a class="dropdown-trigger"  href="{% url 'graph' %}" data-target="dropdown1"><i class="material-icons left">data_usage</i>Graphs</a></li>
           </ul>
         </div>
-      </nav>
 
-    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+      </nav>
 
   </div>
   </body>

@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('covidMap/', include('covidMap.urls')),
     path('', include('home.urls')),
+    path('graph/', include('dataGraphs.urls'))
 ]

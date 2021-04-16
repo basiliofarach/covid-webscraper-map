@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="container">
+  <head>
+    <meta charset="utf-8">
+    <title>Webscraper Application to Covid Map</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet"  href="{% static 'css/materialize.css' %}" media="screen,projection"/>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+    <script type="text/javascript" href="{% static 'js/materialize.js' %}" >
+
+    </script>
+
+  </head>
+  <body>
+    <div>
+      <nav class="nav-extended" style= background-color:#00aae4>
+        <div className="nav-wrapper">
+          <a className="brand-logo" href="{% url 'index' %}"><i class="material-icons left">home</i>Home</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'map' %}"><i class="material-icons left">navigation</i>Map</a></li>
+            <li><a href="{% url 'data' %}" ><i class="material-icons left">analytics</i>Data</a></li>
+            <li><a class="dropdown-trigger"  href="{% url 'graph' %}" data-target="dropdown1"><i class="material-icons left">data_usage</i>Graphs</a></li>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="{% url 'graph' %}">Population</a></li>
+            <li class="tab"><a href="{% url 'total_cases' %}">Total Cases</a></li>
+            <li class="tab"><a href="{% url 'mortality' %}">Mortality</a></li>
+            <li class="tab"><a href="{% url 'mortality_closed' %}">Mortality by Closed</a></li>
+          </ul>
+        </div>
+      </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="{% url 'map' %}">Map</a></li>
+          <li><a href="{% url 'data' %}">Data</a></li>
+          <li><a href="{% url 'graph' %}">Graphs</a></li>
+        </ul>
+
+      </nav>
+
+
+  </div>
+  </body>
+
+  {% block tabs %}
+
+  {% endblock tabs %}

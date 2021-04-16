@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'covidMap.apps.CovidMapConfig',
     'home',
+    'dataGraphs.apps.DatagraphsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
