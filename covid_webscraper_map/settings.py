@@ -26,7 +26,7 @@ SECRET_KEY = 'nlc(txk6df6cg*55dz3)_!57#ku(rl0@ftj@!&=f5^scz6jp#^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["covid-webscraper.herokuapp.com", "basiliofarach.github.io/covid_webscraper_map"]
 
 
 # Application definition
@@ -120,5 +120,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+# Extra lookup directories for collectstatic to find static files
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
