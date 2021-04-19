@@ -1,1 +1,1 @@
-gunicorn covid_webscraper_map.wsgi --log-file -
+web: gunicorn covid_webscraper_map.wsgi --log-file -

@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'nlc(txk6df6cg*55dz3)_!57#ku(rl0@ftj@!&=f5^scz6jp#^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["covid-webscraper.herokuapp.com", "basiliofarach.github.io/covid_webscraper_map"]
 
