@@ -4,5 +4,5 @@ from updateGraphs.Graphs import graph
 
 def start():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(graph, 'interval', minutes=360)
+    scheduler.add_job(graph, 'interval', minutes=60)
     scheduler.start()
