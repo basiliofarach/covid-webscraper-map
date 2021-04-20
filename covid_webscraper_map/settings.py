@@ -26,9 +26,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["covid-webscraper.herokuapp.com", "basiliofarach.github.io/covid_webscraper_map"]
+ALLOWED_HOSTS = ["covid-webscraper.herokuapp.com", "basiliofarach.github.io/covid_webscraper_map", "127.0.0.1"]
 
 
 # Application definition

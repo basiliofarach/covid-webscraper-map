@@ -10,7 +10,7 @@ def map():
     import numpy as np
     import updateMap.webscraper
 
-    pd.options.mode.chained_assignment = None 
+    pd.options.mode.chained_assignment = None
     map = folium.Map(location=[14.06,-87.40], zoom_start=2)
 
     fgc=folium.FeatureGroup(name="Total Covid Cases")
@@ -136,4 +136,5 @@ def map():
     map.save("./covidMap/templates/covidMap/Map1.html")
 
     with open('./covidMap/templates/covidMap/Map1.html', 'r+') as original: map_file = original.read()
-    with open('./covidMap/templates/covidMap/Map1.html', 'w') as modified: modified.write("{% extends 'header.html' %}\n{% block body %}\n" + map_file + "\n{% endblock %}")
+    if "{% extends 'header.html' %}\n{% block body %}\n" not in map_file:
+        with open('./covidMap/templates/covidMap/Map1.html', 'w') as modified: modified.write("{% extends 'header.html' %}\n{% block body %}\n" + map_file + "\n{% endblock %}")
