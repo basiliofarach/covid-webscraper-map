@@ -94,17 +94,17 @@ def graph():
     save(mc)
 
     with open('./dataGraphs/templates/dataGraphs/Population.html', 'r+') as original: graph_file = original.read()
-    if "{% extends 'graphTabs.html' %}\n{% block tabs %}\n" not in graph_file:
+    if "{% extends 'graphTabs.html' %}\n{% block tabs %}\n" and "\n{% endblock %}" not in graph_file:
         with open('./dataGraphs/templates/dataGraphs/Population.html', 'w') as modified: modified.write("{% extends 'graphTabs.html' %}\n{% block tabs %}\n" + graph_file + "\n{% endblock tabs %}")
 
     with open('./dataGraphs/templates/dataGraphs/TotalCases.html', 'r+') as original: graph_file = original.read()
-    if "{% extends 'graphTabs.html' %}\n{% block tabs %}\n" not in graph_file:
+    if "{% extends 'graphTabs.html' %}\n{% block tabs %}\n" and "\n{% endblock %}" not in graph_file:
         with open('./dataGraphs/templates/dataGraphs/TotalCases.html', 'w') as modified: modified.write("{% extends 'graphTabs.html' %}\n{% block tabs %}\n" + graph_file + "\n{% endblock tabs %}")
 
     with open('./dataGraphs/templates/dataGraphs/Mortality.html', 'r+') as original: graph_file = original.read()
-    if "{% extends 'graphTabs.html' %}\n{% block tabs %}\n" not in graph_file:
+    if "{% extends 'graphTabs.html' %}\n{% block tabs %}\n" and "\n{% endblock %}" not in graph_file:
         with open('./dataGraphs/templates/dataGraphs/Mortality.html', 'w') as modified: modified.write("{% extends 'graphTabs.html' %}\n{% block tabs %}\n" + graph_file + "\n{% endblock tabs %}")
 
     with open('./dataGraphs/templates/dataGraphs/MortalityClosed.html', 'r+') as original: graph_file = original.read()
-    if "{% extends 'graphTabs.html' %}\n{% block tabs %}\n" not in graph_file:
+    if "{% extends 'graphTabs.html' %}\n{% block tabs %}\n" and "\n{% endblock %}" not in graph_file:
         with open('./dataGraphs/templates/dataGraphs/MortalityClosed.html', 'w') as modified: modified.write("{% extends 'graphTabs.html' %}\n{% block tabs %}\n" + graph_file + "\n{% endblock tabs %}")

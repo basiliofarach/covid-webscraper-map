@@ -25,7 +25,8 @@ def map():
 
 
     with open('./covidMap/templates/covidMap/data.html', 'r+') as original: data_file = original.read()
-    with open('./covidMap/templates/covidMap/data.html', 'w') as modified: modified.write("{% extends 'header.html' %}\n{% block body %}\n" + data_file + "\n{% endblock %}")
+    if "{% extends 'header.html' %}\n{% block body %}\n" and "\n{% endblock %}" not in data_file:
+        with open('./covidMap/templates/covidMap/data.html', 'w') as modified: modified.write("{% extends 'header.html' %}\n{% block body %}\n" + data_file + "\n{% endblock %}")
 
 
     base_url='https://raw.githubusercontent.com/python-visualization/folium/master/examples/data'
@@ -136,5 +137,5 @@ def map():
     map.save("./covidMap/templates/covidMap/Map1.html")
 
     with open('./covidMap/templates/covidMap/Map1.html', 'r+') as original: map_file = original.read()
-    if "{% extends 'header.html' %}\n{% block body %}\n" not in map_file:
+    if "{% extends 'header.html' %}\n{% block body %}\n" and "\n{% endblock %}" not in map_file:
         with open('./covidMap/templates/covidMap/Map1.html', 'w') as modified: modified.write("{% extends 'header.html' %}\n{% block body %}\n" + map_file + "\n{% endblock %}")
