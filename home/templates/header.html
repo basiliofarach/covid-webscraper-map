@@ -9,17 +9,18 @@
     <script type="text/javascript" href="{% static 'js/materialize.js' %}" ></script>
     <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
 
 
   </head>
   <body>
     <div class="container">
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="{% url 'graph' %}">one</a></li>
-        <li><a href="{% url 'graph' %}">two</a></li>
-        <li><a href="{% url 'graph' %}">three</a></li>
-        <li><a href="{% url 'graph' %}">three</a></li>
-      </ul>
       <nav style= background-color:#00aae4 >
         <div className="nav-wrapper">
           <a className="brand-logo" href="{% url 'index' %}"><i class="material-icons left">home</i>Home</a>
