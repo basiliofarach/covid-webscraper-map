@@ -4,5 +4,5 @@ from updateMap.Map import map
 
 def start():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(map, 'interval', minutes=0.3)
+    scheduler.add_job(map, 'interval', minutes=360)
     scheduler.start()
